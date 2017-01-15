@@ -22,7 +22,7 @@ if ! [ -s $FILE ];then
 fi
 
 #Reload iptables since we need to update it
-systemctl reload iptables
+service iptables reload
 
 # get a copy of the spam list
 unzip $FILE -d /tmp/
