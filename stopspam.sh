@@ -37,7 +37,8 @@ ipset create $SET hash:ip maxelem 600000
 for IP in $( cat $FILE_UNZIPPED | egrep -v '^;' | awk '{ print $1}' ); do
 
     # add the ip address to the chain
-    ipset add $SET $IP
+    ipset add $SET $IP 2>/dev/null
+
 
     #echo $IP
 
