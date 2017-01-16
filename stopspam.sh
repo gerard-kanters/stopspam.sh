@@ -3,7 +3,7 @@
 # This script uses Stopforum downloads http://www.stopforumspam.com/downloads/
 
 #Choose the number of days your would like to download, choices are 1,30,90,180,365
-DAYS="180"
+DAYS="90"
 
 # path to iptables
 IPTABLES="/sbin/iptables";
