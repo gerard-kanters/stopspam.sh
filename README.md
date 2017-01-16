@@ -1,6 +1,6 @@
-Stops spammers from flooding your mail or accessing your site with a single firewall rule. It takes about 2MB of memory and has no measurable impact on performance.
+Stops spammers from flooding your mail or accessing your site with a single firewall rule. It takes about 2MB of memory if you use the 90 days list and has no measurable impact on performance. 
 
-This script downloads a list of 150.000 known spammers to add to your firewall (iptables). Normally this would make iptables slow and therefore your site as well. I used ipset http://ipset.netfilter.org/ipset.man.html to create the list and add a single iptables rule to match the set.
+The default version of the script downloads a list of 150.000 known spammers to add to your firewall (iptables). Maximum is about 560.000 users but needs considerable time processing. Normally adding so much rules would make iptables slow and therefore your site as well. I used ipset http://ipset.netfilter.org/ipset.man.html to create the list and add a single iptables rule to match the set. 
 
 The script is made for Centos/Redhat but can be easily adapted for other Linux distro's. Just change the line to reload iptables. 
 
